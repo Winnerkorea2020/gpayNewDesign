@@ -1,0 +1,121 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+/* components.css */
+
+@import "./components/header.css";
+@import "./components/buttons.css";
+@import "./components/card.css";
+
+.section {
+  @apply px-5 container mx-auto;
+}
+
+.background-color {
+  @apply bg-gradient-to-r from-yellow-500 to-yellow-500/20;
+}
+
+.main {
+  @apply mt-5;
+}
+
+/* HOME SCREEN */
+
+.home__buttons {
+  @apply flex justify-between items-center px-5 gap-5;
+}
+
+.home__button {
+  @apply w-full shadow;
+}
+
+.home__contents {
+  @apply mt-5 w-full mx-auto container pr-5;
+}
+
+.home__item--img img {
+  @apply rounded-full;
+}
+
+.home__title {
+  @apply py-1.5 font-semibold tracking-tighter text-sm pl-5 rounded-r-full border shadow-lg shadow-gray-200;
+}
+
+.home__list {
+  @apply py-2 tracking-tighter text-sm pl-5 rounded-r-3xl border shadow-xl shadow-gray-200;
+}
+
+.home__list li {
+  @apply pr-5;
+}
+
+.home__item {
+  @apply flex w-full items-center justify-between py-5 border-b border-gray-400;
+}
+.home__list li:last-child .home__item {
+  @apply border-none;
+}
+
+.home__item--currents {
+  @apply flex items-center justify-start gap-5;
+}
+
+.home__item--title {
+  @apply tracking-tighter font-semibold;
+}
+
+.home__item--value--current {
+  @apply px-1;
+}
+
+.home__item--balance {
+  @apply font-semibold text-lg;
+}
+
+/* CONVERSATION SCREEN */
+.conversation__card {
+  @apply py-8;
+}
+
+.conversation__list {
+  @apply rounded-2xl px-8 py-5 shadow-xl border border-gray-300;
+}
+
+.conversation__title {
+  @apply text-sm tracking-tighter font-semibold;
+}
+
+.conversation__item {
+  @apply flex justify-between items-center py-3;
+}
+
+.conversation__item:last-child {
+  @apply border-none;
+}
+
+.conversation__item select {
+  @apply bg-transparent font-semibold text-gray-400;
+}
+
+.conversation__item select option {
+  @apply bg-transparent;
+}
+
+.conversation__value {
+  @apply font-semibold w-24 tracking-tighter text-right text-xs;
+}
+
+.conversation__bannder {
+  @apply mt-5;
+}
+
+.connversation__banner--description {
+  @apply tracking-tighter text-xs btn-top-bottom-gradients-violet px-5 py-2.5 text-center;
+}
+
+.conversation__item--input {
+  @apply bg-transparent border-b border-b-gray-700 w-28;
+}

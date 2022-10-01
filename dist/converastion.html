@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- BOX ICONS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- BASE CSS Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/base.css" />
+
+    <title>CONVERSATION</title>
+  </head>
+  <body>
+    <header class="header background-color header__section section">
+      <div class="header__navigation">
+        <div class="header__toggle">
+          <i class="bx bx-category header__toggle--icon"></i>
+        </div>
+        <div class="header__logo">Multi Wallet</div>
+        <div class="header__menu">
+          <div class="header__menu--close">
+            <i class="bx bx-x header__close--icon"></i>
+          </div>
+          <ul class="header__menu--list">
+            <li>
+              <a href="#" class="header__menu--item"> HOME </a>
+            </li>
+            <li>
+              <a href="#" class="header__menu--item">
+                G-Pay Conversion History
+              </a>
+            </li>
+            <li>
+              <a href="#" class="header__menu--item"> G-Pay Payment History </a>
+            </li>
+            <li>
+              <a href="#" class="header__menu--item"> My Page </a>
+            </li>
+            <li>
+              <a href="#" class="header__menu--item"> Language </a>
+            </li>
+          </ul>
+          <div class="header__menu--logout">Logout</div>
+        </div>
+      </div>
+      <div class="header__contents">
+        <div class="header__content--title">
+          <div class="header__content--title--icon">
+            <a href="index.html">
+              <i class="bx bx-chevron-left"></i>
+            </a>
+          </div>
+          <h3>G-Pay Conversation</h3>
+        </div>
+      </div>
+    </header>
+    <main class="main conversation__main">
+      <div class="conversation__card section">
+        <div class="conversation__list background-color">
+          <div class="conversation__item border-b border-b-gray-400">
+            <div class="conversation__title">Select Coin</div>
+            <select name="" id="" class="bg-none">
+              <option value="" class="bg-transparent" selected>Select</option>
+            </select>
+          </div>
+          <div class="conversation__item border-b border-b-gray-400">
+            <div class="conversation__title">Region</div>
+            <div class="conversation__value">KR</div>
+          </div>
+          <div class="conversation__item border-b border-b-gray-400">
+            <div class="conversation__title">1 Coin</div>
+            <div class="conversation__value">
+              53.54
+              <span class="home__item--value--current">KRW</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="conversation__banner">
+        <p class="connversation__banner--description">
+          Converted G-Pay can purchase 99.99% gold bars from gold vending
+          machines in the selected country.
+        </p>
+      </div>
+
+      <div class="conversation__card section">
+        <div class="conversation__list background-color">
+          <div class="conversation__item gap-2">
+            <div class="conversation__title w-full">Application Quantity</div>
+            <input type="text" class="conversation__item--input" />
+            <div class="conversation__value">?</div>
+          </div>
+          <div class="conversation__item gap-2">
+            <div class="conversation__title w-full">Fee(7%)</div>
+            <input type="text" class="conversation__item--input" />
+            <div class="conversation__value">?</div>
+          </div>
+          <div class="conversation__item gap-2">
+            <div class="conversation__title w-full">Conversation Quantity</div>
+            <input type="text" class="conversation__item--input" />
+            <div class="conversation__value">?</div>
+          </div>
+          <div class="conversation__item gap-2">
+            <div class="conversation__title w-full">Conversation G-Pay</div>
+            <input type="text" class="conversation__item--input" />
+            <div class="conversation__value">G-Pay</div>
+          </div>
+        </div>
+        <div class="flex justify-center mt-12">
+          <div
+            class="btn btn-top-bottom-gradients-violet btn-rounded w-40 text-center"
+          >
+            Apply
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

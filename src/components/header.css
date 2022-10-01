@@ -1,0 +1,47 @@
+.header {
+  @apply w-full rounded-b-3xl shadow-xl border-yellow-400 shadow-gray-300;
+}
+
+.header__navigation {
+  @apply flex justify-between items-center h-16 border-b border-gray-500;
+}
+
+.header__toggle {
+  @apply font-semibold text-3xl;
+}
+
+.header__logo {
+  @apply text-sm font-semibold tracking-tighter w-12 text-center leading-tight;
+}
+
+.header__contents {
+  @apply py-5;
+}
+
+.header__content {
+  @apply flex justify-between items-center px-5;
+}
+
+.header__content:nth-child(2) {
+  @apply pt-2;
+}
+
+.header__content--value {
+  @apply tracking-tighter font-semibold text-lg;
+}
+
+.header__content--title {
+  @apply tracking-tighter text-sm font-semibold flex items-center gap-5;
+}
+
+.header__content--title h3 {
+  @apply text-lg;
+}
+
+.header__content--title--icon {
+  @apply text-2xl font-semibold;
+}
+
+.header__menu {
+  @apply hidden;
+}
