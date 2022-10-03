@@ -1,10 +1,15 @@
 .btn {
-  @apply inline-flex cursor-pointer justify-center items-center text-sm font-semibold tracking-tighter py-2.5;
+  @apply inline-flex w-full cursor-pointer justify-center items-center text-sm font-semibold tracking-tighter py-2.5;
 }
 
 .btn-violet {
   @apply bg-violet-900 text-white;
 }
+
+.btn-lightyellow {
+  @apply bg-yellow-300 text-black shadow-2xl shadow-gray-400 border;
+}
+
 .btn-rounded {
   @apply rounded-full;
 }

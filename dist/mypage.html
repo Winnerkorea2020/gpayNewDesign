@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- BOX ICONS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- BASE CSS Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/base.css" />
+
+    <title>My Page</title>
+  </head>
+  <body>
+    <header class="header background-color header__section section">
+      <div class="header__navigation">
+        <div class="header__toggle">
+          <i class="bx bx-category header__toggle--icon"></i>
+        </div>
+        <div class="header__logo">Multi Wallet</div>
+        <div class="header__menu hidden">
+          <div class="header__menu--close">
+            <i class="bx bx-x header__close--icon"></i>
+          </div>
+          <ul class="header__menu--list">
+            <li>
+              <a href="index.html" class="header__menu--item"> HOME </a>
+            </li>
+            <li>
+              <a href="conversationHistory.html" class="header__menu--item">
+                G-Pay Conversion History
+              </a>
+            </li>
+            <li>
+              <a href="paymentHistory.html" class="header__menu--item">
+                G-Pay Payment History
+              </a>
+            </li>
+            <li>
+              <a href="mypage.html" class="header__menu--item"> My Page </a>
+            </li>
+            <li>
+              <a href="#" class="header__menu--item"> Language </a>
+            </li>
+          </ul>
+          <div class="header__menu--logout">Logout</div>
+        </div>
+      </div>
+      <div class="header__contents">
+        <div class="header__content--title">
+          <div class="header__content--title--icon">
+            <a href="index.html">
+              <i class="bx bx-chevron-left"></i>
+            </a>
+          </div>
+          <h3>My Page</h3>
+        </div>
+      </div>
+    </header>
+    <main class="main mypage__main">
+      <div class="mypage__card section">
+        <div class="mypage__items background-color">
+          <form action="" class="mypage__inputbox">
+            <div class="mypage__inputbox--item">
+              <h3 class="mypage__input--title">ID (Not Change)</h3>
+
+              <input
+                type="text"
+                class="mypage__input"
+                value="wang64"
+                disabled
+              />
+            </div>
+
+            <div class="mypage__inputbox--item">
+              <h3 class="mypage__input--title">Name</h3>
+
+              <input type="text" class="mypage__input" value="HWANGEUNHA" />
+            </div>
+            <div class="mypage__inputbox--item">
+              <h3 class="mypage__input--title">E-Mail</h3>
+
+              <input
+                type="email"
+                class="mypage__input"
+                value="wooooriry@gmail.com"
+              />
+            </div>
+            <div class="mypage__inputbox--item">
+              <h3 class="mypage__input--title">Nationality</h3>
+
+              <select name="" id="" class="mypage__select">
+                <option value="" class="mypage__option">KOREA</option>
+                <option value="" class="mypage__option">JAPAN</option>
+                <option value="" class="mypage__option">U.S.A</option>
+                <option value="" class="mypage__option">China</option>
+              </select>
+            </div>
+
+            <div class="mypage__inputbox--item">
+              <h3 class="mypage__input--title">Phone Number</h3>
+
+              <div class="mypage__input--phone">
+                <input type="text" class="mypage__input" value="82" />
+                <input type="tel" class="mypage__input" value="010980894898" />
+              </div>
+            </div>
+            <div class="mypage__button">
+              <a
+                href="index.html"
+                class="btn btn-rounded btn-top-bottom-gradients-violet"
+                >Correction</a
+              >
+            </div>
+          </form>
+          <!-- Divide Line -->
+          <div class="divide-y-2 border-t border-t-gray-700 my-5"></div>
+          <form action="" class="mypage__inputbox">
+            <div class="mypage__inputbox--item">
+              <h3 class="mypage__input--title">Password</h3>
+
+              <input
+                type="password"
+                class="mypage__input"
+                placeholder="Enter Password"
+              />
+            </div>
+            <div class="mypage__inputbox--item">
+              <h3 class="mypage__input--title">Password (Confirm)</h3>
+
+              <input
+                type="password"
+                class="mypage__input"
+                placeholder="Confirm Password"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <script src="./assets/js/navigation.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/datepicker.js"></script>
+  </body>
+</html>

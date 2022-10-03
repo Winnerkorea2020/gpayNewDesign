@@ -1,0 +1,30 @@
+.table-theme-1 {
+  @apply w-full text-xs text-center border-collapse outline-none;
+}
+
+.table-theme-1 thead {
+  @apply text-xs text-white;
+}
+.table-theme-1 thead tr th {
+  @apply py-3 px-1.5;
+}
+
+.table-theme-1 tbody {
+  @apply border-transparent;
+}
+
+.table-theme-1 tbody tr {
+  @apply py-4 font-medium text-gray-900 whitespace-nowrap tracking-tighter border-b border-b-gray-400;
+}
+
+.table-theme-1 tbody tr:last-child {
+  @apply border-transparent;
+}
+
+.table-theme-1 tbody tr th {
+  @apply px-1.5 py-3;
+}
+
+.table-theme-1 tbody tr td {
+  @apply font-semibold;
+}

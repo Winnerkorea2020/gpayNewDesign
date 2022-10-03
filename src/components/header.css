@@ -43,5 +43,34 @@
 }
 
 .header__menu {
-  @apply hidden;
+  @apply fixed bg-gradient-to-r from-yellow-400 to-yellow-200 left-0 top-0 h-full w-full tracking-tighter z-50;
+  z-index: 1000000;
+}
+
+.header__menu--close {
+  @apply text-4xl p-8 font-semibold cursor-progress;
+}
+
+.header__menu--list {
+  @apply ml-14 mt-16 font-semibold text-xl text-gray-800 flex flex-col gap-6;
+}
+
+.header__menu--logout {
+  @apply ml-14 mt-28 font-semibold text-lg text-gray-800;
+}
+
+.header__user {
+  @apply w-full;
+}
+
+.header__user--img {
+  @apply flex justify-center items-center;
+}
+
+.header__user--contents {
+  @apply text-center w-full mt-2 py-5 tracking-tighter font-semibold;
+}
+
+.header__user--title {
+  @apply text-gray-500;
 }

@@ -9,17 +9,18 @@
 @import "./components/header.css";
 @import "./components/buttons.css";
 @import "./components/card.css";
+@import "./components/table.css";
 
 .section {
   @apply px-5 container mx-auto;
 }
 
 .background-color {
-  @apply bg-gradient-to-r from-yellow-500 to-yellow-500/20;
+  @apply bg-gradient-to-r from-yellow-500 to-yellow-200;
 }
 
 .main {
-  @apply mt-5;
+  @apply my-8;
 }
 
 /* HOME SCREEN */
@@ -97,11 +98,11 @@
 }
 
 .conversation__item select {
-  @apply bg-transparent font-semibold text-gray-400;
+  @apply bg-transparent font-semibold text-gray-400 text-center;
 }
 
 .conversation__item select option {
-  @apply bg-transparent;
+  @apply bg-gray-800 text-gray-500 text-center font-semibold py-2.5;
 }
 
 .conversation__value {
@@ -118,4 +119,141 @@
 
 .conversation__item--input {
   @apply bg-transparent border-b border-b-gray-700 w-28;
+}
+
+.conversation__inputbox {
+  @apply h-full bg-transparent w-40 px-3 py-1.5 border text-xs;
+}
+
+/* RECEIVE OR SEND SCREEN */
+
+.receiveOrSend__scan {
+  @apply w-full text-center mt-12;
+}
+
+/* Receive */
+.receive__items {
+  @apply rounded-2xl px-2.5 py-5 shadow-xl border border-gray-300 w-full mt-8;
+}
+
+.receive__items:first-child {
+  @apply mt-0;
+}
+
+.receive__title {
+  @apply text-center tracking-tighter font-semibold mb-2.5;
+}
+
+.receive__item {
+  @apply w-full bg-white rounded-lg text-center py-2.5 tracking-tighter;
+}
+
+.receive__item--qr {
+  @apply h-64 flex justify-center items-center;
+}
+
+.qrCode {
+  @apply bg-gray-300 w-32 h-32;
+}
+
+.receive__scan {
+  @apply mt-5  flex justify-center items-center w-full;
+}
+
+.receive__scan--button {
+  @apply w-72;
+}
+
+.receive__scan--main--back {
+  @apply mt-5;
+}
+
+/* SEND  */
+
+.send__card {
+  @apply mt-24;
+}
+
+.send__items {
+  @apply rounded-2xl px-5 py-2.5 shadow-xl border border-gray-300 w-full mt-8;
+}
+
+.send__inputbox {
+  @apply flex justify-center items-center flex-col w-full;
+}
+
+.send__input--title {
+  @apply my-2.5 tracking-tighter font-semibold w-full;
+}
+
+.send__input {
+  @apply placeholder:text-gray-700  py-2.5 w-full px-5 rounded-xl;
+}
+
+.send__button {
+  @apply w-72 my-5;
+}
+
+/* History */
+
+.history__card {
+  @apply bg-gradient-to-r from-purple-800  to-purple-900  rounded-2xl shadow-2xl border mt-8;
+}
+
+.pagination__theme-1 {
+  @apply border-none text-gray-400;
+}
+
+.pagination__theme-1 ul {
+  @apply flex justify-center items-center gap-5;
+}
+
+.pagination__theme-1 ul li {
+  @apply hover:text-white;
+}
+
+.pagination__theme-1 .activity {
+  @apply text-white font-semibold;
+}
+
+/* Mypage */
+
+.mypage__items {
+  @apply p-5 rounded-2xl shadow-xl;
+}
+
+.mypage__inputbox {
+  @apply grid grid-cols-1 gap-2;
+}
+
+.mypage__input--title {
+  @apply my-2.5 tracking-tighter font-medium w-full;
+}
+
+.mypage__input {
+  @apply placeholder:text-gray-700  py-2.5 w-full px-5 rounded-xl bg-gray-50/80 border border-yellow-200;
+}
+
+.mypage__select {
+  @apply placeholder:text-gray-700  py-2.5 w-full px-5 rounded-xl bg-gray-50/80 border border-yellow-200;
+}
+
+.mypage__option {
+  @apply bg-gray-900 text-white;
+}
+
+.mypage__input--phone {
+  @apply flex justify-items-center items-center w-full gap-2;
+}
+
+.mypage__input--phone .mypage__input:first-child {
+  @apply basis-3/12 text-center;
+}
+
+.mypage__input--phone .mypage__input:last-child {
+  @apply basis-9/12;
+}
+
+.mypage__button {
+  @apply w-full my-5 px-20;
 }

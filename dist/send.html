@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- BOX ICONS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- BASE CSS Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/base.css" />
+
+    <title>SEND</title>
+  </head>
+  <body>
+    <header class="header background-color header__section section">
+      <div class="header__navigation">
+        <div class="header__toggle">
+          <i class="bx bx-category header__toggle--icon"></i>
+        </div>
+        <div class="header__logo">Multi Wallet</div>
+        <div class="header__menu hidden">
+          <div class="header__menu--close">
+            <i class="bx bx-x header__close--icon"></i>
+          </div>
+          <ul class="header__menu--list">
+            <li>
+              <a href="index.html" class="header__menu--item"> HOME </a>
+            </li>
+            <li>
+              <a href="conversationHistory.html" class="header__menu--item">
+                G-Pay Conversion History
+              </a>
+            </li>
+            <li>
+              <a href="paymentHistory.html" class="header__menu--item">
+                G-Pay Payment History
+              </a>
+            </li>
+            <li>
+              <a href="mypage.html" class="header__menu--item"> My Page </a>
+            </li>
+            <li>
+              <a href="#" class="header__menu--item"> Language </a>
+            </li>
+          </ul>
+          <div class="header__menu--logout">Logout</div>
+        </div>
+      </div>
+      <div class="header__contents">
+        <div class="header__content--title">
+          <div class="header__content--title--icon">
+            <a href="index.html">
+              <i class="bx bx-chevron-left"></i>
+            </a>
+          </div>
+          <h3>Send</h3>
+        </div>
+      </div>
+
+      <div class="header__user">
+        <div class="header__user--img">
+          <img
+            src=""
+            alt=""
+            class="rounded-full w-16 h-16 shadow-xl shadow-gray-400"
+          />
+        </div>
+        <div class="header__user--contents">
+          <div class="header__user--title">Your Coin Balance</div>
+          <div class="header__user--value text-2xl">
+            1290000000000
+            <span class="home__item--value--current">GGM</span>
+          </div>
+          <div class="header__user--value text-gray-500 text-lg">
+            490200000000
+            <span class="home__item--value--current">$</span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main receiveOrSend__main">
+      <div class="send__card section">
+        <div class="send__items background-color">
+          <div class="send__inputbox">
+            <h3 class="send__input--title">Coin Balance</h3>
+
+            <input
+              type="text"
+              class="send__input"
+              placeholder="Please put a coin balance"
+            />
+
+            <h3 class="send__input--title">Adress</h3>
+
+            <input
+              type="text"
+              class="send__input"
+              placeholder="Please put an address"
+            />
+
+            <div class="send__button">
+              <a
+                href="index.html"
+                class="btn btn-rounded btn-top-bottom-gradients-violet"
+                >MAIN</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./assets/js/navigation.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/datepicker.js"></script>
+  </body>
+</html>
