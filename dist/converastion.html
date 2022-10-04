@@ -118,13 +118,59 @@
           </div>
         </div>
         <div class="flex justify-center mt-12">
-          <div
+          <button
             class="btn btn-top-bottom-gradients-violet btn-rounded w-40 text-center"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
           >
             Apply
-          </div>
+          </button>
         </div>
       </div>
     </main>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog pt-20">
+        <div class="modal-content rounded-2xl bg-gray-800">
+          <div class="modal-header">
+            <h1
+              class="modal-title text-xl text-red-600 font-semibold text-center w-full py-5"
+              id="exampleModalLabel"
+            >
+              Notice
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-white w-full text-center text-lg">
+            Please Enter Application Quantity.
+          </div>
+          <div class="w-full flex justify-center items-center py-5">
+            <button
+              type="button"
+              class="w-fit px-12 py-2.5 border-white text-white border rounded-2xl justify-items-center"
+              data-bs-dismiss="modal"
+            >
+              Confirm
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/navigation.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/datepicker.js"></script>
   </body>
 </html>

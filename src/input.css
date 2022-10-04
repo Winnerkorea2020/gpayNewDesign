@@ -10,6 +10,7 @@
 @import "./components/buttons.css";
 @import "./components/card.css";
 @import "./components/table.css";
+@import "./components/modal.css";
 
 .section {
   @apply px-5 container mx-auto;
